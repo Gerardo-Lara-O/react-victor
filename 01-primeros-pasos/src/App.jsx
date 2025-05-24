@@ -1,8 +1,8 @@
 import reactLogo from './assets/react.svg'
 import './App.css'
 import Saludo from './components/saludo'
-// Importando nuestro componente
 import MiComponente from './components/MiComponente'
+import SegundoComponente from './components/SegundoComponente'
 
 function App() {
 
@@ -18,6 +18,7 @@ function App() {
       <Saludo></Saludo>
       {/* Cargando el componente */}
       <MiComponente></MiComponente>
+      <SegundoComponente></SegundoComponente>
     </>
   )
 }
