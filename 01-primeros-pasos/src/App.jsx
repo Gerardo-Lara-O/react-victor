@@ -3,9 +3,15 @@ import './App.css'
 import Saludo from './components/saludo'
 import MiComponente from './components/MiComponente'
 import SegundoComponente from './components/SegundoComponente'
+import TercerComponente from './components/tercerComponente'
 
 function App() {
-
+const ficha_medica = {
+  altura: 187,
+  grupo: "h+",
+  estado: "Bueno",
+  alergias: "Ninguna"
+}
   return (
     <>
       <div>
@@ -19,6 +25,7 @@ function App() {
       {/* Cargando el componente */}
       <MiComponente></MiComponente>
       <SegundoComponente></SegundoComponente>
+      <TercerComponente nombre="Gerardo" apellido="Lara" ficha={ficha_medica}></TercerComponente>
     </>
   )
 }
