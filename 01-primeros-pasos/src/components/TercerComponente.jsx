@@ -1,4 +1,4 @@
-
+import PropTypes from 'prop-types'
 
 const TercerComponente = ({nombre, apellido, ficha}) =>{
     
@@ -16,6 +16,12 @@ const TercerComponente = ({nombre, apellido, ficha}) =>{
         </ul>
         </div>
     )
+}
+
+TercerComponente.propTypes = {
+nombre: PropTypes.string.isRequired,
+apellido: PropTypes.string.isRequired,
+ficha: PropTypes.object
 }
 
 export default TercerComponente
