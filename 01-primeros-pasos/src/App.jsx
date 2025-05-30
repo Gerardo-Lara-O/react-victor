@@ -4,14 +4,10 @@ import Saludo from './components/saludo'
 import MiComponente from './components/MiComponente'
 import SegundoComponente from './components/SegundoComponente'
 import TercerComponente from './components/tercerComponente'
+import EventosComponente from './components/EventosComponente'
 
 function App() {
-const ficha_medica = {
-  altura: 187,
-  grupo: "h+",
-  estado: "Bueno",
-  alergias: "Ninguna"
-}
+
   return (
     <>
       <div>
@@ -21,11 +17,13 @@ const ficha_medica = {
       </div>
       <h1>React</h1>
 
-      <Saludo></Saludo>
-      {/* Cargando el componente */}
-      <MiComponente></MiComponente>
-      <SegundoComponente></SegundoComponente>
-      <TercerComponente nombre="Gerardo" apellido="Lara" ficha={ficha_medica}></TercerComponente>
+      
+      
+      <hr></hr>
+      {/* <TercerComponente nombre="Gerardo" apellido="Lara" ficha={ficha_medica}></TercerComponente> */}
+      <EventosComponente></EventosComponente>
+
+      {/* Evento doble click */}
     </>
   )
 }
